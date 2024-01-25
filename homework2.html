@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Example</title>
+</head>
+<body>
+  <button id="enter"onclick="change()">OFF</button>
+  <script>
+    var count=0;
+    function change() {
+      var temp= document.getElementById('enter');
+      count++;
+      if(count%2!==0){
+        temp.textContent ='ON';
+      } else{
+        temp.textContent ='OFF';
+      }
+    }
+  </script>
+</body>
+</html>

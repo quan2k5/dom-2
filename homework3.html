@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Example</title>
+</head>
+<body>
+  <label for="textInput"></label>
+  <input type="text" id="input">
+  <button id="click" onclick="enter()">nhap vao</button>
+   <div id="box1"></div>
+  <div id="box2"></div>
+  <script>
+    var temp=document.getElementById('input');
+    var click=document.getElementById('click');
+    temp.addEventListener('input', function() {
+    document.getElementById('box1').innerText = this.value;
+    });
+    function enter() {
+        var temp2 = document.getElementById('input').value;
+        document.getElementById('box2').innerText =temp2;
+    }
+  </script>
+</body>
+</html>

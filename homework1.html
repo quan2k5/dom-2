@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-top: 20px;
+            width:100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            font-size: larger;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <span>Your answer</span>
+    <input type="text"id="nhap">
+    <button onclick="answer()">answer</button>
+    <script>
+    function answer() {
+        var answer = document.getElementById('nhap').value;
+        if (answer.length > 10) {
+                alert('khong hop le');
+        } else {
+                alert('hop le');
+        }
+    }
+    </script>
+</body>
+</html>
